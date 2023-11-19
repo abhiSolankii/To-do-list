@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="./to-do-list.css" />
+    <script src="./to-do-list.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a
+          class="logo"
+          href="#"
+          style="
+            font-size: 50px;
+            color: black;
+            font-weight: 700;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            text-decoration: none;
+          "
+        >
+          <img
+            src="./images/logo.jpg"
+            alt="Logo"
+            width="60px"
+            height="60px"
+            class="d-inline-block align-text-top"
+          />
+          To do list
+        </a>
+      </div>
+    </nav>
+    <div class="enter-task">
+      <span>Enter task here:</span>
+      <input
+        type="text"
+        class="input-box"
+        id="input-box"
+        placeholder="Click to write..."
+      />
+      <span
+        ><button class="add-task-button" onclick="addTask()">Add</button></span
+      >
+    </div>
+    <div class="tasks">
+      <div>Tasks:</div>
+      <div class="displayed-tasks" id="displayed-tasks"></div>
+    </div>
+    <div class="delete-task" id="delete-task">
+      <span>Enter task number to delete:</span>
+      <input type="text" name="" id="taskToBeDeleted" class="input-box-2" />
+      <button onclick="deleteTask()" class="delete-task-button">Delete</button>
+    </div>
+  </body>
+</html>
